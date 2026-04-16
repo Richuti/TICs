@@ -1,0 +1,49 @@
+# Materiales PBR aproximados para una placa base de aspecto realista (valores Kd/Ks simples en MTL clásico).
+
+newmtl pcb_green
+Ns 50
+Ka 0.05 0.05 0.05
+Kd 0.06 0.28 0.12
+Ks 0.15 0.15 0.15
+d 1
+illum 2
+
+newmtl copper
+Ns 80
+Ka 0.1 0.08 0.05
+Kd 0.72 0.45 0.18
+Ks 0.35 0.35 0.35
+d 1
+illum 2
+
+newmtl aluminum
+Ns 120
+Ka 0.12 0.12 0.12
+Kd 0.55 0.55 0.58
+Ks 0.6 0.6 0.62
+d 1
+illum 2
+
+newmtl plastic_black
+Ns 40
+Ka 0.02 0.02 0.02
+Kd 0.08 0.08 0.09
+Ks 0.2 0.2 0.22
+d 1
+illum 2
+
+newmtl gold_plate
+Ns 90
+Ka 0.15 0.12 0.05
+Kd 0.85 0.68 0.22
+Ks 0.45 0.4 0.25
+d 1
+illum 2
+
+newmtl io_silver
+Ns 150
+Ka 0.15 0.15 0.16
+Kd 0.62 0.64 0.66
+Ks 0.75 0.75 0.78
+d 1
+illum 2

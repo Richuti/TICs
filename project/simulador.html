@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Visor 3D a pantalla completa: explora la placa base pieza a pieza." />
+    <title>Visor 3D — Placa base</title>
+    <link rel="stylesheet" href="/viewer.css" />
+  </head>
+  <body class="viewer">
+    <a class="viewer__skip" href="#webgl">Saltar al visor 3D</a>
+
+    <header class="viewer__chrome" aria-label="Barra del visor">
+      <div class="viewer__brand">
+        <span class="viewer__logo" aria-hidden="true"></span>
+        <span class="viewer__title">Visor placa base</span>
+      </div>
+      <div class="viewer__hints" role="note">
+        <span class="viewer__pill">Rotar</span>
+        <span class="viewer__pill">Rueda · zoom</span>
+        <span class="viewer__pill">Clic en pieza · info</span>
+      </div>
+      <nav class="viewer__nav" aria-label="Salir del visor">
+        <a class="viewer__back" href="./index.html">← Volver al inicio</a>
+      </nav>
+    </header>
+
+    <div class="viewer__stage" id="viewer-stage">
+      <canvas id="webgl" aria-label="Modelo 3D de la placa base"></canvas>
+      <aside id="info-panel" class="info-panel" aria-live="polite" hidden>
+        <button id="close-panel" type="button" class="info-panel__close" aria-label="Cerrar panel">×</button>
+        <h2 id="info-title" class="info-panel__title">Componente</h2>
+        <p id="info-body" class="info-panel__body"></p>
+        <p class="info-panel__hint">Cierra el panel para seguir rotando la vista.</p>
+      </aside>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

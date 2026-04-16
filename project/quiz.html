@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pantalla de quizzes sobre la placa base: varios cuestionarios encadenados para repasar hardware."
+    />
+    <title>BoardLab — Pantalla de quizzes</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="shell">
+      <div class="shell__inner">
+        <a class="mark" href="index.html#inicio">
+          <span class="mark__orb" aria-hidden="true"></span>
+          <span class="mark__word">BoardLab</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#modulos">Recorrido</a>
+          <a href="index.html#flujo">Cómo usarlo</a>
+          <a href="quiz.html">Quizzes</a>
+          <a href="index.html#acerca">Para el aula</a>
+        </nav>
+        <a class="btn btn--solid" href="simulador.html">Entrar al modelo 3D</a>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" aria-labelledby="quiz-hero-title">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="wrap hero__grid">
+          <div class="hero__main">
+            <p class="kicker">TICs · Repaso de hardware</p>
+            <h1 id="quiz-hero-title" class="hero__title">
+              Pantalla de quizzes sobre la placa base
+            </h1>
+            <p class="hero__lead">
+              Aquí tienes varios cuestionarios encadenados para repasar los
+              conceptos clave de la placa base después de explorar el visor 3D.
+            </p>
+          </div>
+          <aside class="hero__panel" aria-label="Consejo de uso">
+            <p class="hero__panel-label">Sugerencia</p>
+            <p class="hero__panel-text">
+              Empieza por el quiz general y ve bajando. Puedes repetir tantas
+              veces como quieras: las respuestas se corrigen en tu navegador.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section
+        class="section section--quiz"
+        aria-labelledby="quiz-progresivo-title"
+      >
+        <div class="wrap">
+          <header class="section__head">
+            <p class="kicker kicker--dark">Modo examen</p>
+            <h2 id="quiz-progresivo-title" class="section__title">
+              Quiz progresivo de 10 preguntas
+            </h2>
+            <p class="section__lede">
+              El sistema elige 10 preguntas aleatorias de un banco grande. Cada
+              vez que respondas, aparecerá la siguiente hasta llegar al
+              resultado final.
+            </p>
+          </header>
+
+          <article class="quiz-card" id="quiz-progressive" aria-live="polite">
+            <header class="quiz-progress__head">
+              <p class="quiz-progress__status">
+                Pregunta <span id="quiz-step-current">1</span> de
+                <span id="quiz-step-total">10</span>
+              </p>
+            </header>
+
+            <form id="quiz-step-form" novalidate>
+              <fieldset class="q">
+                <legend id="quiz-question-text">Cargando pregunta…</legend>
+                <div id="quiz-options"></div>
+              </fieldset>
+
+              <div class="quiz-card__foot">
+                <button type="submit" class="btn btn--solid" id="quiz-next-btn">
+                  Responder y continuar
+                </button>
+                <p class="quiz-card__result" id="quiz-feedback"></p>
+              </div>
+            </form>
+
+            <section
+              id="quiz-summary"
+              hidden
+              aria-labelledby="quiz-summary-title"
+            >
+              <h3 id="quiz-summary-title">Resultado final</h3>
+              <p id="quiz-summary-text"></p>
+              <button class="btn btn--line" id="quiz-restart-btn">
+                Hacer otro intento
+              </button>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot__inner">
+        <p class="foot__copy">
+          © <span id="footer-year"></span> BoardLab · Recurso educativo
+        </p>
+        <nav class="foot__nav" aria-label="Pie de página">
+          <a href="simulador.html">Visor 3D</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="index.html#inicio">Arriba</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/site.js"></script>
+    <script>
+      document.getElementById('footer-year').textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

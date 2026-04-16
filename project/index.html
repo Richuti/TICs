@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Recurso educativo para descubrir la placa base de forma visual y hacer pequeños quizzes de repaso."
+    />
+    <title>BoardLab — Placa base interactiva</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="shell">
+      <div class="shell__inner">
+        <a class="mark" href="index.html#inicio">
+          <span class="mark__orb" aria-hidden="true"></span>
+          <span class="mark__word">BoardLab</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#modulos">Recorrido</a>
+          <a href="index.html#flujo">Cómo usarlo</a>
+          <a href="quiz.html">Quizzes</a>
+          <a href="index.html#acerca">Para el aula</a>
+        </nav>
+        <a class="btn btn--solid" href="simulador.html">Entrar al modelo 3D</a>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section id="inicio" class="hero" aria-labelledby="hero-heading">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="wrap hero__grid">
+          <div class="hero__main">
+            <p class="kicker">TIC · Placa base interactiva</p>
+            <h1 id="hero-heading" class="hero__title">
+              Entiende la placa base
+              <span class="hero__accent">sin abrir el torre</span>
+            </h1>
+            <p class="hero__lead">
+              Explora una placa base en 3D, toca cada zona y descubre su función
+              con textos claros pensados para clase. Después, pon a prueba lo
+              aprendido con pequeños quizzes.
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--solid btn--lg" href="simulador.html"
+                >Ver la placa en 3D</a
+              >
+              <a class="btn btn--line btn--lg" href="quiz.html">Hacer quizzes</a>
+            </div>
+          </div>
+          <aside class="hero__panel" aria-label="Destacado">
+            <p class="hero__panel-label">Pensado para aprender</p>
+            <p class="hero__panel-text">
+              Una vista limpia a pantalla casi completa que permite centrarse en
+              la placa y en los conceptos clave, ideal para explicar en
+              proyector o trabajar por parejas.
+            </p>
+            <ul class="hero__panel-list">
+              <li>Cada zona se puede resaltar</li>
+              <li>Textos breves y directos</li>
+              <li>Enfoque en la comprensión, no en los menús</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Franja eliminada: antes mostraba tecnologías y formatos -->
+
+      <section
+        id="modulos"
+        class="section section--light"
+        aria-labelledby="mod-title"
+      >
+        <div class="wrap">
+          <header class="section__head">
+            <p class="kicker kicker--dark">Qué vas a encontrar</p>
+            <h2 id="mod-title" class="section__title">
+              Un recorrido sencillo en tres pasos
+            </h2>
+            <p class="section__lede">
+              Primero te sitúas, luego exploras la placa con calma y, por
+              último, refuerzas con preguntas rápidas.
+            </p>
+          </header>
+          <div class="bento">
+            <article class="bento__card bento__card--wide">
+              <h3 class="bento__h">Exploración 3D</h3>
+              <p class="bento__p">
+                Una vista donde la protagonista es la placa: puedes girarla,
+                acercarte y pulsar sobre zonas destacadas para leer qué hace
+                cada parte.
+              </p>
+              <a class="link-arrow" href="simulador.html">Abrir exploración 3D →</a>
+            </article>
+            <article class="bento__card">
+              <h3 class="bento__h">Textos didácticos</h3>
+              <p class="bento__p">
+                Cada zona importante viene acompañada de una explicación corta
+                que responde a tres ideas: qué es, para qué sirve y por qué es
+                relevante.
+              </p>
+            </article>
+            <article class="bento__card">
+              <h3 class="bento__h">Quiz de repaso</h3>
+              <p class="bento__p">
+                Una colección de quizzes aleatorios para comprobar si has
+                entendido las partes principales y detectar qué repasar.
+              </p>
+              <a class="link-arrow" href="quiz.html">Abrir pantalla de quizzes →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="flujo"
+        class="section section--dark"
+        aria-labelledby="flow-title"
+      >
+        <div class="wrap flow">
+          <header class="section__head section__head--on-dark">
+            <p class="kicker">Cómo sacarle partido</p>
+              <h2 id="flow-title" class="section__title">
+                Una forma de usarlo en clase
+              </h2>
+          </header>
+          <ol class="flow__steps">
+            <li>
+              <span class="flow__n">01</span>
+              <div>
+                <h3>Presenta la idea</h3>
+                <p>Comenta brevemente qué es una placa base y qué se va a ver.</p>
+              </div>
+            </li>
+            <li>
+              <span class="flow__n">02</span>
+              <div>
+                <h3>Explora juntos</h3>
+                <p>Abrís el modelo 3D y vais identificando zonas y nombres clave.</p>
+              </div>
+            </li>
+            <li>
+              <span class="flow__n">03</span>
+              <div>
+                <h3>Refuerza con quizzes</h3>
+                <p>El grupo responde a las preguntas y se comentan las soluciones.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section
+        id="acerca"
+        class="section section--light"
+        aria-labelledby="about-title"
+      >
+        <div class="wrap about">
+          <div>
+            <p class="kicker kicker--dark">Pensado para el aula</p>
+            <h2 id="about-title" class="section__title">
+              Un recurso ligero y fácil de llevar
+            </h2>
+            <p class="section__lede">
+              Funciona en un navegador moderno sin necesidad de cuentas ni
+              instalación. Puedes llevarlo en un pendrive, subirlo al aula
+              virtual o usarlo directamente en el ordenador del centro.
+            </p>
+          </div>
+          <div class="about__cta">
+            <p class="about__cta-text">
+              ¿Listo para ver la placa en solitario?
+            </p>
+            <a class="btn btn--solid btn--lg" href="simulador.html"
+              >Abrir visor 3D</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot__inner">
+        <p class="foot__copy">
+          © <span id="footer-year"></span> BoardLab · Recurso educativo
+        </p>
+        <nav class="foot__nav" aria-label="Pie de página">
+          <a href="simulador.html">Visor 3D</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="#inicio">Arriba</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/site.js"></script>
+    <script>
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
