@@ -15,6 +15,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        quiz: resolve(__dirname, 'quiz.html'),
         simulador: resolve(__dirname, 'simulador.html'),
       },
     },
