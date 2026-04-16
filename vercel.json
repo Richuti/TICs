@@ -1,0 +1,7 @@
+{
+  "framework": "vite",
+  "installCommand": "cd project && npm install --no-audit --no-fund",
+  "buildCommand": "cd project && npm run build",
+  "outputDirectory": "project/dist"
+}
+
